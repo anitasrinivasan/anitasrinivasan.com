@@ -1,0 +1,30 @@
+baseURL      = "https://www.anitasrinivasan.com/"
+languageCode = "en-us"
+title        = "Anita Srinivasan"
+theme        = "hugo-xmin"
+
+[params]
+  author      = "Anita Srinivasan"
+  description = "Emerging-tech lawyer & product-builder"
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "About"
+    url = "#about"
+    weight = 2
+  [[menu.main]]
+    name = "Skills"
+    url = "#skills"
+    weight = 3
+  [[menu.main]]
+    name = "Story"
+    url = "#story"
+    weight = 4
+  [[menu.main]]
+    name = "Contact"
+    url = "#contact"
+    weight = 5

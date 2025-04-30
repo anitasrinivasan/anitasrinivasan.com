@@ -1,0 +1,19 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ .Title }} | {{ .Site.Title }}</title>
+  <link rel="stylesheet" href="{{ "css/style.css" | relURL }}" />
+  <link rel="stylesheet" href="{{ "css/fonts.css" | relURL }}" />
+  <link rel="stylesheet" href="{{ "css/darkmode.css" | relURL }}" />
+  {{ partial "head_custom.html" . }}
+  <script src="{{ "js/darkmode.js" | relURL }}" defer></script>
+</head>
+<nav style="display: flex; align-items: center; justify-content: space-between;">
+  <ul class="menu" style="margin: 0;">
+    {{ range .Site.Menus.main }}
+    <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+    {{ end }}
+  </ul>
+  <button id="dark-mode-toggle" style="margin-left: 1em; padding: 0; border: none; background: none; font-size: 1.5em; cursor: pointer; line-height: 1;"><span id="dark-mode-icon"></span></button>
+</nav>
+<hr/>
