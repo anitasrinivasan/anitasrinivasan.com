@@ -25,6 +25,10 @@ theme        = "hugo-xmin"
     url = "#story"
     weight = 4
   [[menu.main]]
+    name = "Speaking Engagements"
+    url = "#speaking-engagements"
+    weight = 5
+  [[menu.main]]
     name = "Contact"
     url = "#contact"
-    weight = 5
+    weight = 6
