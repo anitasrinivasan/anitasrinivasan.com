@@ -1,0 +1,83 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import WritingEntry from '../components/WritingEntry.astro';
+import { getSiteContent } from '../lib/content';
+
+const content = getSiteContent();
+
+const recentWriting = [...content.writing]
+  .sort((a, b) => new Date(b.date).valueOf() - new Date(a.date).valueOf())
+  .slice(0, 3);
+
+// Convert markdown links in intro to HTML
+const introHtml = content.intro
+  .replace(/\[([^\]]+)\]\(([^)]+)\)/g,
+    '<a href="$2" target="_blank" rel="noopener noreferrer" class="underline underline-offset-3 decoration-neutral-300 dark:decoration-neutral-600 hover:decoration-neutral-900 dark:hover:decoration-neutral-100 transition-colors">$1</a>');
+
+const linkClass = "underline underline-offset-3 decoration-neutral-300 dark:decoration-neutral-600 hover:decoration-neutral-900 dark:hover:decoration-neutral-100 transition-colors";
+---
+
+<BaseLayout
+  title={content.name}
+  description={`${content.tagline}. ${content.intro.replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')}`}
+>
+  <!-- Hero -->
+  <section class="mb-16">
+    <h1 class="text-4xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100">
+      {content.name}
+    </h1>
+    <p class="text-lg text-neutral-500 dark:text-neutral-400 mt-2">
+      {content.tagline}
+    </p>
+    <p class="text-neutral-600 dark:text-neutral-300 mt-6 max-w-2xl leading-relaxed" set:html={introHtml} />
+    <div class="flex flex-wrap gap-x-6 gap-y-2 mt-6 text-sm">
+      <a href="/about" class="text-neutral-500 hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors">
+        About me &rarr;
+      </a>
+      <a href="/writing" class="text-neutral-500 hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors">
+        Read my writing &rarr;
+      </a>
+      <a href="/projects" class="text-neutral-500 hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors">
+        View projects &rarr;
+      </a>
+    </div>
+  </section>
+
+  <!-- Recent Writing -->
+  <section class="mb-16">
+    <h2 class="text-sm uppercase tracking-widest text-neutral-500 dark:text-neutral-400 mb-6 font-sans font-medium">
+      Recent Writing
+    </h2>
+    <div class="space-y-1">
+      {recentWriting.map((entry) => (
+        <WritingEntry
+          title={entry.title}
+          publishedDate={new Date(entry.date)}
+          outlet={entry.outlet}
+          externalUrl={entry.url}
+        />
+      ))}
+    </div>
+    <a href="/writing" class="inline-block mt-4 text-sm text-neutral-500 hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors">
+      All writing &rarr;
+    </a>
+  </section>
+
+  <!-- Current Focus -->
+  <section>
+    <h2 class="text-sm uppercase tracking-widest text-neutral-500 dark:text-neutral-400 mb-6 font-sans font-medium">
+      Current Focus
+    </h2>
+    <ul class="space-y-3 text-neutral-600 dark:text-neutral-300">
+      {content.currentFocus.map((item) => (
+        <li>
+          {item.text}{' '}
+          {item.link && item.linkText ? (
+            <a href={item.link} target="_blank" rel="noopener noreferrer" class={linkClass}>{item.linkText}</a>
+          ) : null}
+          {item.suffix ? ` ${item.suffix}` : ''}
+        </li>
+      ))}
+    </ul>
+  </section>
+</BaseLayout>

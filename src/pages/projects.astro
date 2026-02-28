@@ -1,0 +1,30 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+import { getSiteContent } from '../lib/content';
+
+const { projects } = getSiteContent();
+---
+
+<BaseLayout
+  title="Projects"
+  description="Research and technology projects by Anita Srinivasan, including work on criminal justice reform and AI alignment."
+>
+  <h1 class="text-3xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100 mb-2">
+    Projects
+  </h1>
+  <p class="text-neutral-500 dark:text-neutral-400 mb-10">
+    Research and technology projects I'm currently working on.
+  </p>
+
+  <div class="space-y-6">
+    {projects.map((project) => (
+      <ProjectCard
+        title={project.title}
+        description={project.description}
+        url={project.url}
+        tags={project.tags || []}
+      />
+    ))}
+  </div>
+</BaseLayout>

@@ -1,0 +1,54 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import WritingEntry from '../components/WritingEntry.astro';
+import { getSiteContent } from '../lib/content';
+
+const { writing } = getSiteContent();
+
+const sortedWriting = [...writing].sort(
+  (a, b) => new Date(b.date).valueOf() - new Date(a.date).valueOf()
+);
+
+// Group by year
+const writingByYear = sortedWriting.reduce<Record<number, typeof sortedWriting>>((acc, entry) => {
+  const year = new Date(entry.date).getFullYear();
+  if (!acc[year]) acc[year] = [];
+  acc[year].push(entry);
+  return acc;
+}, {});
+
+const years = Object.keys(writingByYear)
+  .map(Number)
+  .sort((a, b) => b - a);
+---
+
+<BaseLayout
+  title="Writing"
+  description="Publications, articles, and blog posts on technology policy, AI governance, and law by Anita Srinivasan."
+>
+  <h1 class="text-3xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100 mb-2">
+    Writing
+  </h1>
+  <p class="text-neutral-500 dark:text-neutral-400 mb-10">
+    Publications and articles on technology policy, AI governance, and law.
+  </p>
+
+  {years.map((year) => (
+    <section class="mb-10">
+      <h2 class="text-sm uppercase tracking-widest text-neutral-400 dark:text-neutral-500 mb-4 font-sans font-medium">
+        {year}
+      </h2>
+      <div class="space-y-1">
+        {writingByYear[year].map((entry) => (
+          <WritingEntry
+            title={entry.title}
+            publishedDate={new Date(entry.date)}
+            outlet={entry.outlet}
+            externalUrl={entry.url}
+            description={entry.description}
+          />
+        ))}
+      </div>
+    </section>
+  ))}
+</BaseLayout>

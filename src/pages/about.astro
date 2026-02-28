@@ -1,0 +1,29 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getSiteContent } from '../lib/content';
+
+const content = getSiteContent();
+---
+
+<BaseLayout
+  title="About"
+  description={`${content.name} is a lawyer and technologist working at the intersection of AI governance, fintech, and criminal justice reform.`}
+>
+  <h1 class="text-3xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100 mb-8">
+    About
+  </h1>
+
+  <div class="prose prose-neutral dark:prose-invert prose-lg max-w-none" set:html={content.aboutHtml} />
+
+  <div class="prose prose-neutral dark:prose-invert prose-lg max-w-none mt-8">
+    <h2>Education</h2>
+    <ul>
+      {content.education.map((edu) => (
+        <li>
+          <strong>{edu.degree}</strong>, {edu.school} ({edu.year})
+          {edu.focus ? ` — ${edu.focus}` : ''}
+        </li>
+      ))}
+    </ul>
+  </div>
+</BaseLayout>

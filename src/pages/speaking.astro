@@ -1,0 +1,67 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SpeakingEntry from '../components/SpeakingEntry.astro';
+import { getSiteContent } from '../lib/content';
+
+const { speaking } = getSiteContent();
+
+const speakingEntries = speaking
+  .filter((e) => e.type === 'speaking')
+  .sort((a, b) => new Date(b.date).valueOf() - new Date(a.date).valueOf());
+
+const pressEntries = speaking
+  .filter((e) => e.type === 'press')
+  .sort((a, b) => new Date(b.date).valueOf() - new Date(a.date).valueOf());
+---
+
+<BaseLayout
+  title="Speaking & Press"
+  description="Conference talks, panel appearances, and press mentions by Anita Srinivasan."
+>
+  <h1 class="text-3xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100 mb-2">
+    Speaking &amp; Press
+  </h1>
+  <p class="text-neutral-500 dark:text-neutral-400 mb-10">
+    Conference talks, panel appearances, and media mentions.
+  </p>
+
+  {speakingEntries.length > 0 && (
+    <section class="mb-12">
+      <h2 class="text-sm uppercase tracking-widest text-neutral-400 dark:text-neutral-500 mb-4 font-sans font-medium">
+        Speaking
+      </h2>
+      <div class="space-y-1">
+        {speakingEntries.map((entry) => (
+          <SpeakingEntry
+            title={entry.title}
+            date={new Date(entry.date)}
+            event={entry.event}
+            venue={entry.venue}
+            role={entry.role}
+            url={entry.url}
+          />
+        ))}
+      </div>
+    </section>
+  )}
+
+  {pressEntries.length > 0 && (
+    <section>
+      <h2 class="text-sm uppercase tracking-widest text-neutral-400 dark:text-neutral-500 mb-4 font-sans font-medium">
+        Press
+      </h2>
+      <div class="space-y-1">
+        {pressEntries.map((entry) => (
+          <SpeakingEntry
+            title={entry.title}
+            date={new Date(entry.date)}
+            event={entry.event}
+            venue={entry.venue}
+            role={entry.role}
+            url={entry.url}
+          />
+        ))}
+      </div>
+    </section>
+  )}
+</BaseLayout>

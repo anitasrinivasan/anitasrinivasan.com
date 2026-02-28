@@ -1,0 +1,43 @@
+---
+import FormattedDate from './FormattedDate.astro';
+
+interface Props {
+  title: string;
+  publishedDate: Date;
+  outlet?: string;
+  externalUrl?: string;
+  description?: string;
+}
+
+const { title, publishedDate, outlet, externalUrl, description } = Astro.props;
+---
+
+<div class="group -mx-3 px-3 -my-2 py-3 rounded-lg hover:bg-neutral-50 dark:hover:bg-neutral-900 transition-colors">
+  <div class="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-4">
+    <span class="text-sm text-neutral-400 dark:text-neutral-500 tabular-nums shrink-0 sm:w-24">
+      <FormattedDate date={publishedDate} />
+    </span>
+    <div class="flex-1 min-w-0">
+      {externalUrl ? (
+        <a
+          href={externalUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-neutral-900 dark:text-neutral-100 underline underline-offset-3 decoration-neutral-300 dark:decoration-neutral-600 hover:decoration-neutral-900 dark:hover:decoration-neutral-100 transition-colors"
+        >
+          {title}
+        </a>
+      ) : (
+        <span class="text-neutral-900 dark:text-neutral-100">{title}</span>
+      )}
+      {outlet && (
+        <span class="text-sm text-neutral-500 dark:text-neutral-400 ml-1">
+          &mdash; {outlet}
+        </span>
+      )}
+      {description && (
+        <p class="text-sm text-neutral-500 dark:text-neutral-400 mt-1">{description}</p>
+      )}
+    </div>
+  </div>
+</div>

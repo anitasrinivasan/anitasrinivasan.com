@@ -1,9 +1,0 @@
-<nav style="display: flex; align-items: center; justify-content: space-between;">
-  <ul class="menu" style="margin: 0;">
-    {{ range .Site.Menus.main }}
-    <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
-    {{ end }}
-  </ul>
-  <button id="dark-mode-toggle" style="margin-left: 1em; padding: 0; border: none; background: none; font-size: 1.5em; cursor: pointer; line-height: 1;"><span id="dark-mode-icon"></span></button>
-</nav>
-<hr/>

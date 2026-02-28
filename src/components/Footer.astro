@@ -1,0 +1,15 @@
+---
+import SocialLinks from './SocialLinks.astro';
+import { getSiteContent } from '../lib/content';
+
+const { name } = getSiteContent();
+---
+
+<footer class="border-t border-neutral-200 dark:border-neutral-800 py-8 mt-16">
+  <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+    <p class="text-sm text-neutral-500">
+      &copy; {new Date().getFullYear()} {name}
+    </p>
+    <SocialLinks />
+  </div>
+</footer>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://anitasrinivasan.com/sitemap-index.xml
