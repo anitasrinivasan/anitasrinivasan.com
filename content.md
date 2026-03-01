@@ -126,19 +126,20 @@ social:
   twitter: "https://x.com/precognita"
 ---
 
-I'm a lawyer and technologist who has spent the last decade working across corporate law, fintech, blockchain, and now AI governance.
+My work sits at the intersection of law, technology, and governance - but I've come to that intersection by way of building. Over the past decade, I've been a securities lawyer, a product manager, and a startup general counsel. That combination shapes how I think about the question at the center of my work: how do we govern technologies that are evolving faster than the institutions meant to regulate them?
 
-I started my career as a corporate lawyer at **S&R Associates** in Mumbai, one of India's leading law firms, where I worked on public securities offerings and M&A transactions. That experience gave me a front-row seat to how capital markets and regulation shape technology adoption at scale.
+I started my career as a corporate lawyer in Mumbai, but quickly found myself drawn to the technology side - first as a product manager at fintech startups, where I spent four years building products for underserved communities in India. That experience changed how I understood regulation. When you've had to redesign a product overnight because of a Supreme Court ruling, or lead a corporate restructuring to navigate a shifting regulatory landscape, you develop a different intuition for where the gap between law and technology actually lives. I came away convinced that the people shaping the rules for emerging technologies need to understand what it takes to build under them.
 
-I then moved into product management, joining **Kaleidofin**, a fintech startup in Chennai building financial products for underserved communities. Over four years, I helped scale mutual fund investments and credit underwriting models for microfinance borrowers from 4 to 500 branches across rural India and led policy advocacy around India's national digital identity infrastructure. At **Simpl**, I worked on regulatory strategy for a buy-now-pay-later business.
+That conviction carried me into blockchain, where I served as General Counsel at **KGEN**, an onchain protocol backed by Accel, Prosus, and Aptos. I led legal, policy, and product counsel across multiple jurisdictions and developed the legal strategy for a token generation event and exchange listing - work that sat squarely at the intersection of technology design and regulatory architecture.
 
-From 2023 to 2025, I served as **General Counsel at KGEN**, an onchain distribution protocol backed by Accel, Prosus, and Aptos. I led the legal, policy, and product counsel functions, negotiated a US$10 million strategic funding round, and developed the legal strategy for a token generation event and exchange listing across multiple jurisdictions.
+I'm currently pursuing an **LL.M. at UC Berkeley School of Law** with a Certificate of Specialization in Law & Technology, graduating in May 2026. Coming to Berkeley expanded my focus from blockchain to AI governance - both technologies that pose the same fundamental question: how do you regulate systems that are powerful, rapidly evolving, and not well understood by the people writing the rules?
 
-I'm currently pursuing an **LL.M. at UC Berkeley School of Law** with a Certificate of Specialization in Law & Technology, graduating in May 2026. My coursework spans AI governance, securities regulation, antitrust, cybersecurity, and platform regulation.
+At Berkeley, I'm a Research Fellow with the **Supervised Program for Alignment Research (SPAR)**, working on AI economic rights. As a Graduate Student Researcher with Prof. Colleen Chien, I build and research technology-led tools to scale access to justice through the **Paper Prisons Initiative**. I serve as Blog Editor at the **Berkeley Technology Law Journal** and sit on the boards of the **Berkeley AI Safety Initiative** and **AI at Berkeley Law**.
 
-At Berkeley, I'm a Research Fellow with the **Supervised Program for Alignment Research**, working on AI economic rights. I'm also a Graduate Student Researcher with Prof. Colleen Chien, building and researching technology-led approaches to scale access-to-justice initiatives through the **Paper Prisons Initiative**. I serve as Blog Editor at the **Berkeley Technology Law Journal** and am a board member of the **Berkeley AI Safety Initiative** and **AI at Berkeley Law**.
+I also keep building. I placed in the **Top 10 at ETH Denver 2026** and won **second place in the EigenLayer Track at Berkeley's 10^2 Hackathon** in October 2025. My recent projects include an autonomous AI agent for criminal record expungement, an automated litigation monitoring pipeline for crypto enforcement actions, and various tools at the intersection of AI and legal infrastructure. I build because I believe that people who write the rules should understand what it takes to ship the product - and building is how I keep that understanding current.
 
-My writing on AI governance has appeared in **Tech Policy Press** and the **Berkeley Technology Law Journal Blog**, and has been featured in the **Financial Times**' FT Alphaville recommended reading list.
+My writing has appeared in **Tech Policy Press** and the **Berkeley Technology Law Journal Blog**, and has been featured in the **Financial Times**' FT Alphaville recommended reading list.
+
 
 ## Get in Touch
 
