@@ -4,12 +4,11 @@
 # =============================================================================
 
 name: Anita Srinivasan
-tagline: "Law, Technology & Public Interest"
+tagline: "Law, Policy and Governance of Frontier Technologies"
 intro: >
   I'm an LL.M. candidate at [UC Berkeley School of Law](https://www.law.berkeley.edu/),
-  specializing in Law & Technology. I work at the intersection of AI governance,
-  criminal justice reform, and technology policy. Previously, I served as General
-  Counsel at a web3 company and as a product manager at fintech startups in India.
+  specializing in Law & Technology. My interests lie at the intersection of the law, policy and governance of emerging technologies like AI and blockchain. Previously, I served as General
+  Counsel at a blockchain startup and as a product manager at fintech startups in India.
 
 # -----------------------------------------------------------------------------
 # Current Focus (shown on home page)
@@ -124,20 +123,20 @@ social:
   email: "anita@berkeley.edu"
   linkedin: "https://www.linkedin.com/in/anitasrinivasan/"
   github: "https://github.com/anitasrinivasan"
-  twitter: "https://x.com/anitasrinivasan"
+  twitter: "https://x.com/precognita"
 ---
 
-I'm a lawyer and technologist who has spent the last decade working across corporate law, financial technology, web3, and now AI governance and public interest technology.
+I'm a lawyer and technologist who has spent the last decade working across corporate law, fintech, blockchain, and now AI governance.
 
 I started my career as a corporate lawyer at **S&R Associates** in Mumbai, one of India's leading law firms, where I worked on public securities offerings and M&A transactions. That experience gave me a front-row seat to how capital markets and regulation shape technology adoption at scale.
 
-I then moved into product management, joining **Kaleidofin**, a fintech startup in Chennai building financial products for underserved communities. Over four years, I helped scale credit underwriting models for microfinance borrowers from 4 to 500 branches across rural India and led policy advocacy around India's national digital identity infrastructure. At **Simpl**, I worked on regulatory strategy for a buy-now-pay-later business.
+I then moved into product management, joining **Kaleidofin**, a fintech startup in Chennai building financial products for underserved communities. Over four years, I helped scale mutual fund investments and credit underwriting models for microfinance borrowers from 4 to 500 branches across rural India and led policy advocacy around India's national digital identity infrastructure. At **Simpl**, I worked on regulatory strategy for a buy-now-pay-later business.
 
-From 2023 to 2025, I served as **General Counsel at KGEN**, a web3 distribution protocol backed by Accel, Prosus, and Aptos. I led the legal, policy, and product counsel functions, negotiated a US$10 million strategic funding round, and developed the legal strategy for a token generation event and exchange listing across multiple jurisdictions.
+From 2023 to 2025, I served as **General Counsel at KGEN**, an onchain distribution protocol backed by Accel, Prosus, and Aptos. I led the legal, policy, and product counsel functions, negotiated a US$10 million strategic funding round, and developed the legal strategy for a token generation event and exchange listing across multiple jurisdictions.
 
 I'm currently pursuing an **LL.M. at UC Berkeley School of Law** with a Certificate of Specialization in Law & Technology, graduating in May 2026. My coursework spans AI governance, securities regulation, antitrust, cybersecurity, and platform regulation.
 
-At Berkeley, I'm a Research Fellow with the **Supervised Program for Alignment Research**, working on AI economic rights. I'm also a Graduate Student Researcher with Prof. Colleen Chien, building technology tools through the **Paper Prisons Initiative** to support criminal justice reform. I serve as Blog Editor at the **Berkeley Technology Law Journal** and am a board member of the **Berkeley AI Safety Initiative** and **AI at Berkeley Law**.
+At Berkeley, I'm a Research Fellow with the **Supervised Program for Alignment Research**, working on AI economic rights. I'm also a Graduate Student Researcher with Prof. Colleen Chien, building and researching technology-led approaches to scale access-to-justice initiatives through the **Paper Prisons Initiative**. I serve as Blog Editor at the **Berkeley Technology Law Journal** and am a board member of the **Berkeley AI Safety Initiative** and **AI at Berkeley Law**.
 
 My writing on AI governance has appeared in **Tech Policy Press** and the **Berkeley Technology Law Journal Blog**, and has been featured in the **Financial Times**' FT Alphaville recommended reading list.
 
