@@ -4,7 +4,7 @@
 # =============================================================================
 
 name: Anita Srinivasan
-tagline: "Law, Policy and Governance of Frontier Technologies"
+tagline: "Law, policy and governance of frontier technologies"
 intro: >
   I'm an LL.M. candidate at [UC Berkeley School of Law](https://www.law.berkeley.edu/),
   specializing in Law & Technology. My interests lie at the intersection of the law, policy and governance of emerging technologies like AI and blockchain. Previously, I served as General
@@ -165,10 +165,6 @@ education:
   - degree: "B.A., LL.B. (Hons.)"
     school: National Law School of India University
     year: 2015
-  - degree: Study Abroad
-    school: University of Pennsylvania Carey Law School
-    year: 2013
-    focus: "Fall semester"
 
 # -----------------------------------------------------------------------------
 # Social Links
