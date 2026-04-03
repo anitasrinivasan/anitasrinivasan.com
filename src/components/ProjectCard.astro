@@ -4,9 +4,10 @@ interface Props {
   description: string;
   url?: string;
   tags: string[];
+  date?: string;
 }
 
-const { title, description, url, tags } = Astro.props;
+const { title, description, url, tags, date } = Astro.props;
 ---
 
 <div class="group -mx-3 px-3 -my-2 py-4 rounded-lg hover:bg-neutral-50 dark:hover:bg-neutral-900 transition-colors">
@@ -24,6 +25,9 @@ const { title, description, url, tags } = Astro.props;
       title
     )}
   </h3>
+  {date && (
+    <p class="text-sm text-neutral-500 dark:text-neutral-400 mt-1">{date}</p>
+  )}
   <p class="text-neutral-600 dark:text-neutral-400 mt-2">{description}</p>
   {tags.length > 0 && (
     <div class="flex flex-wrap gap-2 mt-3">

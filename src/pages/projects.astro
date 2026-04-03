@@ -4,27 +4,48 @@ import ProjectCard from '../components/ProjectCard.astro';
 import { getSiteContent } from '../lib/content';
 
 const { projects } = getSiteContent();
+
+// Group projects by category, preserving order
+const categories: { name: string; projects: typeof projects }[] = [];
+for (const project of projects) {
+  const catName = project.category || 'Other';
+  let cat = categories.find((c) => c.name === catName);
+  if (!cat) {
+    cat = { name: catName, projects: [] };
+    categories.push(cat);
+  }
+  cat.projects.push(project);
+}
 ---
 
 <BaseLayout
   title="Projects"
-  description="Research and technology projects by Anita Srinivasan, including work on criminal justice reform and AI alignment."
+  description="Hackathon wins and open-source tools by Anita Srinivasan."
 >
   <h1 class="text-3xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100 mb-2">
     Projects
   </h1>
   <p class="text-neutral-500 dark:text-neutral-400 mb-10">
-    Research and technology projects I'm currently working on.
+    Hackathon wins and open-source tools.
   </p>
 
-  <div class="space-y-6">
-    {projects.map((project) => (
-      <ProjectCard
-        title={project.title}
-        description={project.description}
-        url={project.url}
-        tags={project.tags || []}
-      />
+  <div class="space-y-12">
+    {categories.map((cat) => (
+      <section>
+        <h2 class="text-2xl font-semibold text-neutral-900 dark:text-neutral-100 mb-4">
+          {cat.name}
+        </h2>
+        <div class="space-y-6">
+          {cat.projects.map((project) => (
+            <ProjectCard
+              title={project.title}
+              description={project.description}
+              url={project.url}
+              tags={project.tags || []}
+            />
+          ))}
+        </div>
+      </section>
     ))}
   </div>
 </BaseLayout>

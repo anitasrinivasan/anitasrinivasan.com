@@ -18,6 +18,15 @@ export interface Project {
   description: string;
   url?: string;
   tags: string[];
+  category?: string;
+}
+
+export interface ResearchEntry {
+  title: string;
+  description: string;
+  url?: string;
+  tags: string[];
+  date?: string;
 }
 
 export interface SpeakingEntry {
@@ -58,6 +67,7 @@ export interface SiteContent {
   intro: string;
   currentFocus: FocusItem[];
   writing: WritingEntry[];
+  research: ResearchEntry[];
   projects: Project[];
   speaking: SpeakingEntry[];
   education: Education[];
@@ -86,6 +96,7 @@ export function getSiteContent(): SiteContent {
       ...w,
       date: typeof w.date === 'object' ? w.date.toISOString() : w.date,
     })),
+    research: data.research || [],
     projects: data.projects || [],
     speaking: (data.speaking || []).map((s: any) => ({
       ...s,

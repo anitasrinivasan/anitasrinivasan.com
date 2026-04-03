@@ -44,17 +44,71 @@ writing:
     featured: true
 
 # -----------------------------------------------------------------------------
+# Research
+# -----------------------------------------------------------------------------
+research:
+  - title: "Who Speaks for the Organization? Simulating Strategic Organizational Reasoning in Regulatory Comment Processes"
+    date: "April 2026"
+    description: "Accepted to PoliSim@CHI 2026 workshop (ACM Conference on Human Factors in Computing Systems, Barcelona). Simulating how organizations reason strategically when participating in regulatory comment processes using LLM agents."
+    tags: [AI, policy, simulation, research]
+
+  - title: "No Gate, No Claim: How Existing Law Demands Decentralized Identity for AI Agents"
+    date: "March 2026 – August 2026"
+    description: "Legal analysis across the US, EU, and India demonstrating that existing law already functionally mandates verifiable, decentralized identity for AI agents. $5,000 research grant from the Decentralization Research Center."
+    url: "https://paperprisons.org"
+    tags: [AI agents, decentralized identity, law, research]
+
+  - title: "Should We Give AI a Wallet?"
+    date: "February 2026 – May 2026"
+    description: "Research on AI economic rights as part of the Supervised Program for Alignment Research (SPAR), mentored by Larissa Schiavo (Eleos AI), Toni Sims, and Prof. Jeff Sebo (NYU Center for Mind, Ethics, and Policy)."
+    tags: [AI alignment, economic rights, research]
+
+# -----------------------------------------------------------------------------
 # Projects
 # -----------------------------------------------------------------------------
 projects:
-  - title: Paper Prisons Initiative
-    description: "A trauma-informed reentry chatbot assistant for California, using RAG-based AI to help formerly incarcerated individuals understand their expungement eligibility and find housing resources. Built with Prof. Colleen Chien at UC Berkeley School of Law."
-    url: "https://paperprisons.org"
-    tags: [criminal justice, AI, chatbot, RAG]
+  # Hackathons
+  - title: "Clean Slate Agent"
+    category: Hackathons
+    description: "Autonomous AI public defender for criminal record expungement, built with Claude AI, Canton Network, x402 Protocol, and Base Sepolia. Top 10 of 185+ projects (Top 2, Prosperia Track) at ETH Denver 2026."
+    url: "https://github.com/anitasrinivasan/clean-slate-agent"
+    tags: [AI, blockchain, criminal justice, hackathon]
 
-  - title: AI Economic Rights Research
-    description: "Research on AI economic rights as part of the Supervised Program for Alignment Research (SPAR), mentored by Larissa Schiavo (Eleos AI), Toni Sims, and Prof. Jeff Sebo (NYU Center for Mind, Ethics, and Policy)."
-    tags: [AI alignment, economic rights, research]
+  - title: "Free Money"
+    category: Hackathons
+    description: "Copy trading Polymarket bot built on Eigenlayer TEE for enhanced security. 2nd Place, EigenLayer Track at Berkeley 10² Hackathon (October 2025)."
+    tags: [blockchain, DeFi, hackathon]
+
+  # Tools & Open Source
+  - title: "ada-pdf-compliance"
+    category: "Tools & Open Source"
+    description: "Claude Code plugin for ADA/Section 508 PDF accessibility compliance. Auto-fixes metadata, bookmarks, link descriptions, structure trees, and PDF/UA flags."
+    url: "https://github.com/anitasrinivasan/ada-pdf-compliance"
+    tags: [accessibility, AI, tooling, open source]
+
+  - title: "Accessibility Toolkit for Google Slides"
+    category: "Tools & Open Source"
+    description: "Automated accessibility checks for Google Slides, powered by Claude AI."
+    url: "https://github.com/anitasrinivasan/accessibility-toolkit-google-slides"
+    tags: [accessibility, AI, tooling, open source]
+
+  - title: "cite2fn"
+    category: "Tools & Open Source"
+    description: "Claude Code plugin to convert academic citations to Bluebook footnotes and endnotes in Word documents."
+    url: "https://github.com/anitasrinivasan/cite2fn"
+    tags: [legal tech, tooling, open source]
+
+  - title: "x-signals"
+    category: "Tools & Open Source"
+    description: "Personal knowledge graph and writing assistant built on your own Twitter/X bookmarks and LinkedIn saved posts."
+    url: "https://github.com/anitasrinivasan/x-signals"
+    tags: [AI, knowledge management, open source]
+
+  - title: "Magpie"
+    category: "Tools & Open Source"
+    description: "Chrome extension to export Twitter/X bookmarks and LinkedIn saved posts as Markdown."
+    url: "https://github.com/anitasrinivasan/magpie"
+    tags: [browser extension, tooling, open source]
 
 # -----------------------------------------------------------------------------
 # Speaking & Press — type: "speaking" or "press"
