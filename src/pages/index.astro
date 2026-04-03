@@ -23,23 +23,34 @@ const linkClass = "underline underline-offset-3 decoration-neutral-300 dark:deco
 >
   <!-- Hero -->
   <section class="mb-16">
-    <h1 class="text-4xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100">
-      {content.name}
-    </h1>
-    <p class="text-lg text-neutral-500 dark:text-neutral-400 mt-2">
-      {content.tagline}
-    </p>
-    <p class="text-neutral-600 dark:text-neutral-300 mt-6 max-w-2xl leading-relaxed" set:html={introHtml} />
-    <div class="flex flex-wrap gap-x-6 gap-y-2 mt-6 text-sm">
-      <a href="/about" class="text-neutral-500 hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors">
-        About me &rarr;
-      </a>
-      <a href="/writing" class="text-neutral-500 hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors">
-        Research & writing &rarr;
-      </a>
-      <a href="/projects" class="text-neutral-500 hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors">
-        View projects &rarr;
-      </a>
+    <div class="flex flex-col md:flex-row md:items-start md:gap-12">
+      <div class="flex-1">
+        <h1 class="text-4xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100">
+          {content.name}
+        </h1>
+        <p class="text-lg text-neutral-500 dark:text-neutral-400 mt-2">
+          {content.tagline}
+        </p>
+        <p class="text-neutral-600 dark:text-neutral-300 mt-6 max-w-2xl leading-relaxed" set:html={introHtml} />
+        <div class="flex flex-wrap gap-x-6 gap-y-2 mt-6 text-sm">
+          <a href="/about" class="text-neutral-500 hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors">
+            About me &rarr;
+          </a>
+          <a href="/writing" class="text-neutral-500 hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors">
+            Research & writing &rarr;
+          </a>
+          <a href="/projects" class="text-neutral-500 hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors">
+            View projects &rarr;
+          </a>
+        </div>
+      </div>
+      <div class="mt-8 md:mt-0 flex-shrink-0">
+        <img
+          src="/headshot.jpg"
+          alt="Anita Srinivasan"
+          class="w-48 h-48 md:w-56 md:h-56 rounded-full object-cover grayscale"
+        />
+      </div>
     </div>
   </section>
 
