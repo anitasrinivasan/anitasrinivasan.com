@@ -7,7 +7,7 @@ const content = getSiteContent();
 
 <BaseLayout
   title="About"
-  description={`${content.name} is a lawyer and technologist working at the intersection of AI governance, fintech, and criminal justice reform.`}
+  description={`${content.name} is a researcher working on AI governance and safety, with a background in law, fintech, and web3.`}
 >
   <h1 class="text-3xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100 mb-8">
     About
@@ -22,6 +22,11 @@ const content = getSiteContent();
         <li>
           <strong>{edu.degree}</strong>, {edu.school} ({edu.year})
           {edu.focus ? ` — ${edu.focus}` : ''}
+          {edu.honors && (
+            <span class="block text-sm text-neutral-500 dark:text-neutral-400">
+              {edu.honors}
+            </span>
+          )}
         </li>
       ))}
     </ul>

@@ -52,6 +52,7 @@ export interface Education {
   school: string;
   year: number;
   focus?: string;
+  honors?: string;
 }
 
 export interface Social {

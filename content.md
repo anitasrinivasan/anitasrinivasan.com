@@ -6,29 +6,35 @@
 name: Anita Srinivasan
 tagline: "Law, policy and governance of frontier technologies"
 intro: >
-  I'm an LL.M. candidate at [UC Berkeley School of Law](https://www.law.berkeley.edu/),
-  specializing in Law & Technology. My interests lie at the intersection of the law, policy and governance of emerging technologies like AI and blockchain. Previously, I served as General
-  Counsel at a blockchain startup and as a product manager at fintech startups in India.
+  I'm a researcher working on AI governance and safety — currently a scholar with
+  [MATS Research](https://www.matsprogram.org/), designing a federal government backstop
+  for catastrophic AI risk. I hold an LL.M. from [UC Berkeley School of Law](https://www.law.berkeley.edu/),
+  specializing in Law & Technology. Previously, I served as General Counsel at a blockchain
+  startup and as a product manager at fintech startups in India.
 
 # -----------------------------------------------------------------------------
 # Current Focus (shown on home page)
 # -----------------------------------------------------------------------------
 currentFocus:
-  - text: "Research on AI economic rights with the"
-    linkText: "Supervised Program for Alignment Research"
-    link: "https://www.sparai.org/"
-  - text: "Building tech-for-social-good tools through the"
-    linkText: "Paper Prisons Initiative"
-    link: "https://paperprisons.org"
-    suffix: "at UC Berkeley Law"
-  - text: "Blog Editor at the"
-    linkText: "Berkeley Technology Law Journal"
-    link: "https://btlj.org"
+  - text: "Scholar with"
+    linkText: "MATS Research"
+    link: "https://www.matsprogram.org/"
+    suffix: "— designing a federal government backstop for catastrophic AI risk"
+  - text: "Researching decentralized identity for AI agents, funded by a grant from the"
+    linkText: "Decentralization Research Center"
+    link: "https://thedrcenter.org/"
 
 # -----------------------------------------------------------------------------
 # Writing — Add new entries at the top
 # -----------------------------------------------------------------------------
 writing:
+  - title: "Multi-Agent AI is Outpacing the Liability Frameworks Built for Single-Agent Systems"
+    date: 2026-06-02
+    outlet: Berkeley Technology Law Journal Blog
+    url: "https://btlj.org/2026/06/multi-agent-ai-is-outpacing-the-liability-frameworks-built-for-single-agent-systems/"
+    description: "Why liability frameworks designed for single-agent AI systems break down when autonomous agents interact, and what multi-agent accountability could look like."
+    featured: true
+
   - title: "AI Agents are Rewriting the Web's Rules of Engagement. Here's a Way to Fix it."
     date: 2026-01-20
     outlet: Tech Policy Press
@@ -47,20 +53,30 @@ writing:
 # Research
 # -----------------------------------------------------------------------------
 research:
+  - title: "Cooperation Is Not a Safety Property: A Position on Adversarial-Resistant Agent Identity"
+    date: "July 2026"
+    description: "Position paper presented at the 2nd Technical AI Governance Workshop at ICML 2026, Seoul. Pre-print forthcoming."
+    tags: [AI governance, agent identity, research]
+
+  - title: "Post-Hoc Explainability and the Transparency Requirements of EU AI Law: An Assessment of Mechanistic Interpretability as an Alternative"
+    date: "June 2026"
+    description: "Presented at CLAIRvoyantS: Workshop on AI Regulation & Safety at ICAIL 2026, Singapore. Camera-ready draft forthcoming."
+    tags: [EU AI law, interpretability, research]
+
   - title: "Who Speaks for the Organization? Simulating Strategic Organizational Reasoning in Regulatory Comment Processes"
     date: "April 2026"
-    description: "Accepted to PoliSim@CHI 2026 workshop (ACM Conference on Human Factors in Computing Systems, Barcelona). Simulating how organizations reason strategically when participating in regulatory comment processes using LLM agents."
+    description: "Presented at the PoliSim@CHI 2026 workshop (ACM Conference on Human Factors in Computing Systems, Barcelona). Simulating how organizations reason strategically when participating in regulatory comment processes using LLM agents."
+    url: "https://polisim.net/assets/papers/accepted_papers/Who_Speaks_for_the_Organization_Simulating_Strategic_Organizational_Reasoning_in.pdf"
     tags: [AI, policy, simulation, research]
 
   - title: "No Gate, No Claim: How Existing Law Demands Decentralized Identity for AI Agents"
     date: "March 2026 – August 2026"
     description: "Legal analysis across the US, EU, and India demonstrating that existing law already functionally mandates verifiable, decentralized identity for AI agents. $5,000 research grant from the Decentralization Research Center."
-    url: "https://paperprisons.org"
     tags: [AI agents, decentralized identity, law, research]
 
   - title: "Should We Give AI a Wallet?"
     date: "February 2026 – May 2026"
-    description: "Research on AI economic rights as part of the Supervised Program for Alignment Research (SPAR), mentored by Larissa Schiavo (Eleos AI), Toni Sims, and Prof. Jeff Sebo (NYU Center for Mind, Ethics, and Policy)."
+    description: "Research on AI economic rights conducted as part of the Supervised Program for Alignment Research (SPAR), mentored by Larissa Schiavo (Eleos AI), Toni Sims, and Prof. Jeff Sebo (NYU Center for Mind, Ethics, and Policy)."
     tags: [AI alignment, economic rights, research]
 
 # -----------------------------------------------------------------------------
@@ -162,9 +178,11 @@ education:
     school: UC Berkeley School of Law
     year: 2026
     focus: "Law & Technology"
+    honors: "Dean's List (top 10% of class); Merit Scholarship; Frederic Bastiat Fellowship, Mercatus Center (2025–26); K.C. Mahindra Scholarship"
   - degree: "B.A., LL.B. (Hons.)"
     school: National Law School of India University
     year: 2015
+    honors: "Vikram Singh Medal for Young Leader of the Year; National Rank 21 of 30,000+ candidates, Common Law Admission Test"
 
 # -----------------------------------------------------------------------------
 # Social Links
@@ -178,17 +196,19 @@ social:
 
 My work sits at the intersection of law, technology, and governance - but I've come to that intersection by way of building. Over the past decade, I've been a securities lawyer, a product manager, and a startup general counsel. That combination shapes how I think about the question at the center of my work: how do we govern technologies that are evolving faster than the institutions meant to regulate them?
 
-I started my career as a corporate lawyer in Mumbai, but quickly found myself drawn to the technology side - first as a product manager at fintech startups, where I spent four years building products for underserved communities in India. That experience changed how I understood regulation. When you've had to redesign a product overnight because of a Supreme Court ruling, or lead a corporate restructuring to navigate a shifting regulatory landscape, you develop a different intuition for where the gap between law and technology actually lives. I came away convinced that the people shaping the rules for emerging technologies need to understand what it takes to build under them.
+I started my career as a corporate lawyer at S&R Associates in Mumbai, working on public securities offerings and M&A transactions including the US$23 billion Vodafone-Idea merger. But I quickly found myself drawn to the technology side - first as a product manager at the fintech startups Kaleidofin and Simpl, where I spent four years building products for underserved communities in India, including scaling credit underwriting models from 4 to 500 branches in rural India. That experience changed how I understood regulation. When you've had to redesign a product overnight because of a Supreme Court ruling, or lead a corporate restructuring to navigate a shifting regulatory landscape, you develop a different intuition for where the gap between law and technology actually lives. I came away convinced that the people shaping the rules for emerging technologies need to understand what it takes to build under them.
 
-That conviction carried me into blockchain, where I served as General Counsel at **KGEN**, an onchain protocol backed by Accel, Prosus, and Aptos. I led legal, policy, and product counsel across multiple jurisdictions and developed the legal strategy for a token generation event and exchange listing - work that sat squarely at the intersection of technology design and regulatory architecture.
+That conviction carried me into blockchain, where I served as General Counsel at **KGEN**, a web3 distribution protocol valued at US$500 million and backed by Accel, Prosus, Aptos, and Polygon. I led legal, policy, and product counsel across multiple jurisdictions, closed a US$10 million strategic ecosystem round, and developed the legal strategy for a token generation event and exchange listing - work that sat squarely at the intersection of technology design and regulatory architecture.
 
-I'm currently pursuing an **LL.M. at UC Berkeley School of Law** with a Certificate of Specialization in Law & Technology, graduating in May 2026. Coming to Berkeley expanded my focus from blockchain to AI governance - both technologies that pose the same fundamental question: how do you regulate systems that are powerful, rapidly evolving, and not well understood by the people writing the rules?
+I completed my **LL.M. at UC Berkeley School of Law** in May 2026 with a Certificate of Specialization in Law & Technology, graduating on the Dean's List in the top 10% of my class. Coming to Berkeley expanded my focus from blockchain to AI governance - both technologies that pose the same fundamental question: how do you regulate systems that are powerful, rapidly evolving, and not well understood by the people writing the rules?
 
-At Berkeley, I'm a Research Fellow with the **Supervised Program for Alignment Research (SPAR)**, working on AI economic rights. As a Graduate Student Researcher with Prof. Colleen Chien, I build and research technology-led tools to scale access to justice through the **Paper Prisons Initiative**. I serve as Blog Editor at the **Berkeley Technology Law Journal** and sit on the boards of the **Berkeley AI Safety Initiative** and **AI at Berkeley Law**.
+At Berkeley, I was a Research Fellow with the **Supervised Program for Alignment Research (SPAR)**, working on AI economic rights, and a Graduate Student Researcher with Prof. Colleen Chien, building technology-led tools to scale access to justice through the **Paper Prisons Initiative** - including serving as teaching assistant for the vibe-coding module of her course on the law and governance of artificial intelligence. I served as Blog Editor at the **Berkeley Technology Law Journal**, sat on the boards of the **Berkeley AI Safety Initiative** and **AI at Berkeley Law**, and mentored startups at the **Berkeley Digital Assets Xcelerator**.
+
+Today, I'm a scholar with **MATS Research** (10.0 cohort), mentored by Cristian Trout (AIUC), designing a federal government backstop for catastrophic AI risk. I'm also leading a research project on decentralized identity for AI agents - a legal analysis across the US, EU, and India demonstrating that existing law already functionally demands verifiable identity for AI agents - supported by a grant from the **Decentralization Research Center**.
 
 I also keep building. I placed in the **Top 10 at ETH Denver 2026** and won **second place in the EigenLayer Track at Berkeley's 10^2 Hackathon** in October 2025. My recent projects include an autonomous AI agent for criminal record expungement, an automated litigation monitoring pipeline for crypto enforcement actions, and various tools at the intersection of AI and legal infrastructure. I build because I believe that people who write the rules should understand what it takes to ship the product - and building is how I keep that understanding current.
 
-My writing has appeared in **Tech Policy Press** and the **Berkeley Technology Law Journal Blog**, and has been featured in the **Financial Times**' FT Alphaville recommended reading list.
+My research has been presented at workshops at **ICML**, **ICAIL**, and **CHI**. My writing has appeared in **Tech Policy Press** and the **Berkeley Technology Law Journal Blog**, and has been featured in the **Financial Times**' FT Alphaville recommended reading list.
 
 
 ## Get in Touch
