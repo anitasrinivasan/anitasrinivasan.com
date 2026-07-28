@@ -1,11 +1,15 @@
 ---
 import ThemeToggle from './ThemeToggle.astro';
+import { getCv } from '../lib/cv';
+
+const cv = getCv();
 
 const navLinks = [
   { label: 'About', href: '/about' },
   { label: 'Research & Writing', href: '/writing' },
   { label: 'Projects', href: '/projects' },
   { label: 'Speaking & Press', href: '/speaking' },
+  ...(cv ? [{ label: 'CV', href: '/cv' }] : []),
 ];
 
 const currentPath = Astro.url.pathname;

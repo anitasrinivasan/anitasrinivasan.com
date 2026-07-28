@@ -1,0 +1,66 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCv } from '../lib/cv';
+
+const cv = getCv();
+
+const actionLinkClass =
+  'text-neutral-500 hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors';
+const inlineLinkClass =
+  'underline underline-offset-3 decoration-neutral-300 dark:decoration-neutral-600 hover:decoration-neutral-900 dark:hover:decoration-neutral-100 transition-colors';
+---
+
+<BaseLayout title="CV" description="Curriculum vitae of Anita Srinivasan.">
+  <div class="flex flex-wrap items-baseline justify-between gap-y-2 mb-8">
+    <h1 class="text-3xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100">
+      CV
+    </h1>
+    {cv && (
+      <div class="flex gap-x-6 text-sm">
+        <a href={cv.url} download="Anita-Srinivasan-CV.pdf" class={actionLinkClass}>
+          Download PDF &darr;
+        </a>
+        <a href={cv.url} target="_blank" rel="noopener noreferrer" class={actionLinkClass}>
+          Open in new tab &rarr;
+        </a>
+      </div>
+    )}
+  </div>
+
+  {cv ? (
+    <>
+      <object
+        data={cv.url}
+        type="application/pdf"
+        aria-label="CV PDF viewer"
+        class="hidden md:block w-full h-[75vh] border border-neutral-200 dark:border-neutral-800 rounded-sm"
+      >
+        <p class="p-6 text-neutral-600 dark:text-neutral-300">
+          Your browser can&rsquo;t display PDFs inline.
+          <a href={cv.url} target="_blank" rel="noopener noreferrer" class={inlineLinkClass}>
+            Open the CV in a new tab
+          </a>
+          instead.
+        </p>
+      </object>
+      <a
+        href={cv.url}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="md:hidden block border border-neutral-200 dark:border-neutral-800 rounded-sm p-6 group"
+      >
+        <span class="block text-neutral-900 dark:text-neutral-100 group-hover:opacity-80 transition-opacity">
+          View CV (PDF) &rarr;
+        </span>
+        <span class="block mt-1 text-sm text-neutral-500 dark:text-neutral-400">
+          Opens in your device&rsquo;s PDF viewer.
+        </span>
+      </a>
+    </>
+  ) : (
+    <p class="text-neutral-600 dark:text-neutral-300">
+      CV coming soon. In the meantime, you can
+      <a href="/about" class={inlineLinkClass}>read more about me</a>.
+    </p>
+  )}
+</BaseLayout>
